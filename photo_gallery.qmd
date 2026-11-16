@@ -1,0 +1,87 @@
+<!--format:
+  html:
+    toc: true
+    embed-resources: true
+jupyter: python3
+--->
+
+# Photo Gallery
+
+<!-- This gallery automatically displays all photographs stored in the gallery folder. Descriptions are pulled from `assets/gallery/photo_descriptions.xlsx`. -->
+
+```{python}
+#| echo: false
+#| output: asis
+
+from pathlib import Path
+from IPython.display import display, Image
+from openpyxl import load_workbook
+
+# Gallery folder
+gallery_folder = Path("assets/gallery")
+
+# Supported image formats
+extensions = {".jpg", ".jpeg", ".png", ".webp", ".bmp"}
+
+# Load descriptions from Excel using OpenPyXL
+excel_path = gallery_folder / "photo_descriptions.xlsx"
+
+try:
+    workbook = load_workbook(excel_path, read_only=True, data_only=True)
+    sheet = workbook.active
+
+    # Read column headers
+    headers = [
+        str(cell.value).strip().lower() if cell.value else ""
+        for cell in sheet[1]
+    ]
+
+    filename_col = headers.index("filename")
+    description_col = headers.index("description")
+
+    # Make a lookup dictionary: filename -> description
+    desc_lookup = {}
+
+    for row in sheet.iter_rows(min_row=2, values_only=True):
+        filename = row[filename_col]
+        description = row[description_col]
+
+        if filename:
+            desc_lookup[str(filename).strip()] = (
+                str(description).strip() if description is not None else ""
+            )
+
+    workbook.close()
+
+except Exception as e:
+    print(f"**Warning:** Could not load descriptions.xlsx — {e}\n")
+    desc_lookup = {}
+
+# Extract all images
+images = sorted([
+    p for p in gallery_folder.iterdir()
+    if p.is_file() and p.suffix.lower() in extensions
+])
+
+#print(f"Total photographs: {len(images)}\n")
+
+# Display photographs
+for i, photo in enumerate(images, start=1):
+
+    #print(f"## Photograph {i}: {photo.name}\n")
+
+    display(Image(
+        filename=str(photo),
+        width=600
+    ))
+    print("---\n")
+
+    # Get description from Excel (fallback if missing)
+    description = desc_lookup.get(
+        photo.name,
+        "No description available."
+    )
+
+    print(f" {description}\n")
+    print("---\n")
+```

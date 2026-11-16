@@ -1,0 +1,92 @@
+---
+page-layout: full
+---
+
+```{=html}
+<!-- HERO SECTION -->
+<div class="hero-section">
+  <div class="hero-photo">
+    <img src="assets/images/headshot.png" alt="Sushmita Maharjan" />
+  </div>
+  <div class="hero-content">
+    <h1 class="hero-name">Sushmita Maharjan</h1>
+    <p class="hero-subtitle">
+      Civil Engineer &nbsp;·&nbsp; Bridge Specialist
+    </p>
+    <p class="hero-bio">
+      Over five years of experience in bridge engineering, with a focus on analysis, design, and construction of bridges.
+    </p>
+    <div class="hero-links">
+      <a href="mailto:sushmitamaharjan221@gmail.com" class="hero-link">
+        <i class="bi bi-envelope-fill"></i> Email
+      </a>
+      <a href="https://www.linkedin.com/in/sushmita-maharjan-940b761bb" class="hero-link" target="_blank">
+        <i class="bi bi-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/Sushmita-221" class="hero-link" target="_blank">
+        <i class="bi bi-github"></i> GitHub
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- IMPACT NUMBERS -->
+<div class="impact-row">
+  <div class="impact-stat">
+    <span class="impact-number">6+</span>
+    <span class="impact-label">Years of Experience in bridge engineering</span>
+  </div>
+  <div class="impact-stat">
+    <span class="impact-number">15+</span>
+    <span class="impact-label">Bridge Verifications</span>
+  </div>
+  <div class="impact-stat">
+    <span class="impact-number">1</span>
+    <span class="impact-label">Published Conference Paper</span>
+  </div>
+  <div class="impact-stat">
+    <span class="impact-number">10+</span>
+    <span class="impact-label">Rivers systems</span>
+  </div>
+</div>
+
+<!-- FEATURED WORK -->
+<div class="featured-section">
+  <h2>Featured Work</h2>
+  <div class="work-cards">
+
+    <div class="work-card">
+      <div class="work-card-tag">Design Verification</div>
+      <h3 class="work-card-title">Bridge Design Verification</h3>
+      <p class="work-card-desc">
+        Verified the bridge design from hydrological, structural, and geotechnical perspectives, ensuring compliance with design codes and standards.
+      </p>
+      <div class="work-card-tools">Arc Gis &nbsp;·&nbsp;,MS-Excel&nbsp;·&nbsp; </div>
+      <a href="projects/index.qmd" class="work-card-link">View projects →</a>
+    </div>
+
+    <div class="work-card">
+      <div class="work-card-tag">Research Project</div>
+      <h3 class="work-card-title"> Comparative Study of the Statistical Methods of Fragility Curve Generation</h3>
+      <p class="work-card-desc">
+        Formulate a simpler methoda and best practices of generating fragility curves
+        Compare the generated fragility curves with the existing methods and validate the results
+      </p>
+      <div class="work-card-tools">Python &nbsp;·&nbsp;</div>
+      <a href="publications.qmd" class="work-card-link">View publications →</a>
+    </div>
+
+    <div class="work-card">
+      <div class="work-card-tag">Trainer</div>
+      <h3 class="work-card-title">Motorable Bridge Design and Design Verification</h3>
+      <p class="work-card-desc">
+        Conducted training sessions on bridge design and verification, covering topics such as load analysis, structural integrity, and compliance with design standards.
+       
+      </p>
+      <div class="work-card-tools">LRBSU &nbsp;·&nbsp; Sudurpashchim &nbsp;·&nbsp; </div>
+      <!-- <a href="projects/index.qmd" class="work-card-link">View projects →</a> -->
+    </div>
+
+  </div>
+</div>
+```

@@ -1,0 +1,51 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Sushmita Maharjan"
+  description: "Bridge Engineer, Hydraulics Engineering,Sediment Transport"
+  site-url: "https://github.com/Sushmita-221"
+
+  open-graph:
+    title: "Sushmita Maharjan - Bridge Engineer"
+    description: "Bridge Engineer with profieciency in Analysis, design and construction supervision."
+    image: "assets/images/headshot.png"
+    locale: "en_US"
+
+  twitter-card:
+    title: "Sushmita Maharjan - Bridge Engineer"
+    description: "Bridge Engineer with profieciency in Analysis, design and construction supervision."
+    image: "assets/images/headshot.png"
+    card-style: summary_large_image
+
+  navbar:
+    left:
+      - href: about.qmd
+        text: About
+      - href: experience.qmd
+        text: Experience
+      - href: skills.qmd
+        text: Skills
+      - href: publications.qmd
+        text: Publications
+      - href: photo_gallery.qmd
+        text: Gallery
+      - href: contact.qmd
+        text: Contact
+
+  page-footer:
+    center: |
+      &copy; 2026 Sushmita Maharjan | Kathmandu, Nepal |
+      <span class="beta-badge">Beta</span>
+      This site is actively being developed and updated.
+
+  search: true
+
+format:
+  html:
+    theme: cosmo
+    css: styles/custom.css
+    toc: false
+    page-layout: full
+    lang: en

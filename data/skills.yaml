@@ -1,0 +1,36 @@
+skills:
+  - category: "Hydrology and Hydraulic Analysis"
+    items:
+      - "Catchment Analysis"
+      - "Hydrologic Modeling" 
+      
+
+  - category: "Bridge Structural Engineering"
+    items:
+      - "Analysis of Bridge structures"
+      - "Design of Reinforced Concrete Bridges and Prestressed Concrete Bridges"
+      - "Manual analysis and verification of bridge design calculations"
+   
+  - category: "Construction Supervision"
+    items:
+      - "Layout and alignment verification"
+      - "Construction quality assurance and quality control"
+      - "Monitoring and evaluation of construction progress"
+   
+
+  - category: "Data Analysis"
+    items:
+      - "R-Value analysis"
+      - "Statistical analysis"
+      - "Python"
+      - "Plotly"
+      - "Matplotlib"
+
+  - category: "Software and Tools"
+    items:
+      - "Excel"
+      - "ArcGIS"  
+      - "Programming"
+      - "Hec-Ras"
+      - "AutoCAD"
+      

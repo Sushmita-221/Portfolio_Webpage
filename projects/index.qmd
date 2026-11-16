@@ -1,0 +1,53 @@
+---
+title: "Projects"
+---
+
+```{python}
+#| echo: false
+#| output: asis
+import yaml
+from pathlib import Path
+
+yaml_path = Path(r"E:\Github\Portfolio_Webpage\data\projects.yaml")
+data = yaml.safe_load(yaml_path.read_text(encoding="utf-8"))
+projects = data.get("projects") or []
+
+def one_line(s):
+    return " ".join(str(s).split())
+
+categories = {}
+for proj in projects:
+    if not isinstance(proj, dict):
+        continue
+    cat = proj.get("category") or "Uncategorized"
+    categories.setdefault(cat, []).append(proj)
+
+for cat, proj_list in categories.items():
+    print(f"## {cat}\n")
+    for proj in proj_list:
+        status = f" *({proj['status']})*" if proj.get("status") else ""
+        print(f"### {proj.get('title', 'Untitled')}{status}\n")
+
+        if proj.get("year"):
+            print(f"*{proj['year']}*\n")
+        if proj.get("description"):
+            print(f"{one_line(proj['description'])}\n")
+        if proj.get("problem"):
+            print(f"**Problem addressed:** {one_line(proj['problem'])}\n")
+
+        tools = proj.get("tools") or []
+        if tools:
+            print(f"**Tools:** {', '.join(tools)}\n")
+
+        links = []
+        if proj.get("page"):
+            links.append(f"[View full case study →]({proj['page']})")
+        if proj.get("github"):
+            links.append(f"[GitHub]({proj['github']})")
+        if proj.get("url"):
+            links.append(f"[Project site]({proj['url']})")
+        if links:
+            print(" | ".join(links))
+        print()
+    print("---\n")
+```

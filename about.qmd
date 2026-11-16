@@ -1,0 +1,34 @@
+---
+title: "About"
+---
+I am a Civil Engineer with more than 5 years of experience in the field of bridge engineering.Participated in analysis, design and construction of bridges. 
+
+## Research Interests
+
+- Impact of sediment in hydraulic structures
+
+## Education
+```{python}
+#| echo: false
+#| output: asis
+import yaml
+
+with open('data/education.yaml', 'r', encoding='utf-8') as f:
+    data = yaml.safe_load(f) or {}
+
+degrees = data.get('education') or []
+
+for edu in degrees:
+    status = " *(In Progress)*" if edu.get('status') == 'In Progress' else ""
+    print(f"### {edu['degree']}{status}\n")
+    if edu.get('concentration'):
+        print(f"*{edu['concentration']}*\n")
+    print(f"**{edu['institution']}**\n")
+    print(f"{edu['location']} | {edu['period']}")
+    if edu.get('graduation'):
+        print(f"\n*Graduated: {edu['graduation']}*")
+    print("\n\n")
+```
+## Approach
+
+Understand the hydraulic properties and build resilient structures

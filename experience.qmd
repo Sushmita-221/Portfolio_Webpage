@@ -1,0 +1,58 @@
+
+---
+title: "Experience"
+format:
+  html:
+    css: styles.css
+---
+
+::: {.experience}
+
+```{python}
+#| echo: false
+#| output: asis
+import yaml
+from pathlib import Path
+
+data = yaml.safe_load(Path("data/experience.yaml").read_text(encoding="utf-8"))
+
+def one_line(s):
+    return " ".join(str(s).split())
+
+for job in data["experience"]:
+    print(f"## {job['title']}\n")
+
+    org = job["organization"]
+    url = job.get("url")
+    logo = job.get("logo")
+
+    parts = []
+    if logo:
+        img = f"![{org}]({logo}){{height=40px}}"
+        parts.append(f"[{img}]({url})" if url else img)
+    parts.append(f"**[{org}]({url})**" if url else f"**{org}**")
+
+    meta = " | ".join(x for x in [" ".join(parts)] if x)
+    location= job.get("location")
+    period = job.get("period")
+    print(f"{meta}\\\n{location}\\\n{period}\n" if period else f"{meta}\n")
+
+    if job.get("note"):
+        print(f"*{one_line(job['note'])}*\n")
+
+    for b in job.get("bullets") or []:
+        print(f"- {b}")
+    if job.get("bullets"):
+        print()
+
+    for proj in job.get("projects") or []:
+        link = f" — [Campaign site]({proj['url']})" if proj.get("url") else ""
+        print(f"### {proj['name']}{link}\n")
+        if proj.get("description"):
+            print(f"*{one_line(proj['description'])}*\n")
+        for b in proj.get("bullets") or []:
+            print(f"- {b}")
+        print()
+
+    print("---\n")
+```
