@@ -56,11 +56,11 @@
     "text": "2021-2025\nHydrological and hydraulic review, Geotechnical Reports Review and Structural Verification\nTools: Excel-worksheet, ArcGIS\nView full case study →"
   },
   {
-    "objectID": "projects/index.html#public-health-surveillance",
-    "href": "projects/index.html#public-health-surveillance",
+    "objectID": "projects/index.html#construction-supervision",
+    "href": "projects/index.html#construction-supervision",
     "title": "Projects",
-    "section": "Public Health Surveillance",
-    "text": "Public Health Surveillance\n\nConstruction Supervision of Bridges of Sudurpashchim Province, Nepal (Active)\n2026\nReal-time interactive dashboard tracking the 2026 Bundibugyo Ebola outbreak in DRC and Uganda, powered by a fully automated daily pipeline using Gemini AI for data extraction, Google Trends surveillance, and statistical trajectory analysis\nProblem addressed: Fast-moving outbreak data requires daily automated collection that is resilient to changing source page formats\nTools: Python, Gemini AI, Google Trends, Chart.js, GitHub Actions\nView full case study → | GitHub"
+    "section": "Construction Supervision",
+    "text": "Construction Supervision\n\nConstruction Supervision of Bridges of Sudurpashchim Province, Nepal (Active)\n2026\nReal-time interactive dashboard tracking the 2026 Bundibugyo Ebola outbreak in DRC and Uganda, powered by a fully automated daily pipeline using Gemini AI for data extraction, Google Trends surveillance, and statistical trajectory analysis\nProblem addressed: Fast-moving outbreak data requires daily automated collection that is resilient to changing source page formats\nTools: Python, Gemini AI, Google Trends, Chart.js, GitHub Actions\nGitHub"
   },
   {
     "objectID": "projects/index.html#data-engineering",
@@ -186,63 +186,7 @@
     "href": "projects/Bridge-Design-Verification/index.html",
     "title": "Design verification of bridges of Sudurpashchim Province, Nepal",
     "section": "",
-    "text": "Sudurpashchim Province\n  Hydrological Review\n  Geotechnical Analysis\n  Structural Verification\n  Completed"
-  },
-  {
-    "objectID": "projects/Bridge-Design-Verification/index.html#overview",
-    "href": "projects/Bridge-Design-Verification/index.html#overview",
-    "title": "Design verification of bridges of Sudurpashchim Province, Nepal",
-    "section": "Overview",
-    "text": "Overview\nDigital Sentinel AI is an independent doctoral research project — a Python-based regulatory compliance monitoring platform that automates the detection and assessment of digital food marketing content for signals of youth-targeting risk.\nThe platform addresses a critical gap in public health surveillance: despite rapidly evolving regulatory frameworks for digital food marketing, enforcement capacity has not kept pace. Systematic monitoring of brand compliance with youth-targeting restrictions at scale remains a largely manual, resource-intensive process. Digital Sentinel AI demonstrates that automated, evidence-based compliance monitoring is technically feasible at a fraction of the cost of manual review.\n\n     View Live Platform"
-  },
-  {
-    "objectID": "projects/Bridge-Design-Verification/index.html#the-problem",
-    "href": "projects/Bridge-Design-Verification/index.html#the-problem",
-    "title": "Design verification of bridges of Sudurpashchim Province, Nepal",
-    "section": "The Problem",
-    "text": "The Problem\nDigital food marketing targeting children is a growing public health concern. Ultra-processed food brands — classified under NOVA Group 4 — increasingly reach children through social media, influencer content, and targeted advertising, often in ways that may conflict with emerging regulatory frameworks including:\n\nUK High in Fat, Salt and Sugar (HFSS) regulations — restricting the promotion of less healthy products in digital and broadcast media\nEU Digital Services Act (DSA) — establishing obligations around targeted advertising directed at minors\n\nDespite these regulatory developments, public health researchers and regulatory bodies lack accessible tools to continuously track and assess digital marketing behavior across platforms at scale."
-  },
-  {
-    "objectID": "projects/Bridge-Design-Verification/index.html#what-the-platform-does",
-    "href": "projects/Bridge-Design-Verification/index.html#what-the-platform-does",
-    "title": "Design verification of bridges of Sudurpashchim Province, Nepal",
-    "section": "What the Platform Does",
-    "text": "What the Platform Does\nDigital Sentinel AI follows a four-stage automated pipeline:\n\n  \n    01\n    Capture\n    Automated web scraping collects digital \n    marketing content across platforms\n  \n  →\n  \n    02\n    Analyze\n    Content assessed against HFSS and DSA \n    regulatory criteria\n  \n  →\n  \n    03\n    Score\n    Each item receives a risk score and \n    compliance classification\n  \n  →\n  \n    04\n    Report\n    SHA-256 notarized evidence records create \n    an auditable, tamper-evident documentation chain"
-  },
-  {
-    "objectID": "projects/Bridge-Design-Verification/index.html#why-it-matters",
-    "href": "projects/Bridge-Design-Verification/index.html#why-it-matters",
-    "title": "Design verification of bridges of Sudurpashchim Province, Nepal",
-    "section": "Why It Matters",
-    "text": "Why It Matters\nRegulatory frameworks for digital food marketing are evolving rapidly, but enforcement capacity has not kept pace. This platform demonstrates three things:\n\nFor public health researchers — a replicable methodology for systematic digital marketing surveillance at scale\nFor regulatory bodies and advocacy organizations — a demonstration that technology can support evidence gathering for policy enforcement\nFor the broader field — a contribution to the emerging evidence base on the reach and nature of digital food marketing targeting children"
-  },
-  {
-    "objectID": "projects/Bridge-Design-Verification/index.html#tech-stack",
-    "href": "projects/Bridge-Design-Verification/index.html#tech-stack",
-    "title": "Design verification of bridges of Sudurpashchim Province, Nepal",
-    "section": "Tech Stack",
-    "text": "Tech Stack\n\n\n\nComponent\nTechnology\n\n\n\n\nWeb Scraping & Automation\nPython, Playwright\n\n\nBackend Framework\nFlask\n\n\nEvidence Notarization\nSHA-256 Hashing\n\n\nDeployment\nHugging Face Spaces\n\n\nData Processing\nPython — pandas, NumPy\n\n\nMonitoring Scope\nNOVA Group 4 / HFSS brands\n\n\nRegulatory Frameworks\nUK HFSS, EU Digital Services Act"
-  },
-  {
-    "objectID": "projects/Bridge-Design-Verification/index.html#potential-applications",
-    "href": "projects/Bridge-Design-Verification/index.html#potential-applications",
-    "title": "Design verification of bridges of Sudurpashchim Province, Nepal",
-    "section": "Potential Applications",
-    "text": "Potential Applications\nWhile Digital Sentinel AI was developed with a focus on NOVA Group 4 food marketing and youth-targeting risk, the underlying pipeline is adaptable to a range of public health surveillance contexts:\nRegulatory Compliance Monitoring\nAutomated assessment of brand content against defined regulatory criteria — including HFSS, DSA, or equivalent national frameworks — to support enforcement bodies in identifying potential violations at scale.\nAcademic Research on Digital Marketing\nSystematic, reproducible collection and classification of digital marketing content for peer-reviewed research on commercial determinants of health, including tobacco, alcohol, and ultra-processed food promotion.\nPolicy Advocacy and Evidence Generation\nGeneration of audit-ready, SHA-256 notarized evidence records that advocacy organizations and public health bodies can use to support policy arguments and regulatory submissions.\nMulti-Country and Cross-Platform Surveillance\nThe modular pipeline architecture allows adaptation across platforms, languages, and product categories — making it applicable to multi-country research programs tracking digital marketing behavior across jurisdictions.\nLongitudinal Marketing Trend Analysis\nContinuous monitoring over time enables detection of shifts in marketing tactics, messaging strategies, and platform behavior — supporting both retrospective analysis and real-time public health intelligence."
-  },
-  {
-    "objectID": "projects/Bridge-Design-Verification/index.html#current-status",
-    "href": "projects/Bridge-Design-Verification/index.html#current-status",
-    "title": "Design verification of bridges of Sudurpashchim Province, Nepal",
-    "section": "Current Status",
-    "text": "Current Status\nDigital Sentinel AI is live and deployed as an independent doctoral research project. The platform is actively monitoring digital marketing content and generating risk assessments across tracked brands.\nPlatform capability findings — including aggregate risk signal detection across monitored content — are currently being prepared for peer-reviewed publication. Specific brand-level findings will be reported through formal academic channels following peer review."
-  },
-  {
-    "objectID": "projects/Bridge-Design-Verification/index.html#limitations-and-future-work",
-    "href": "projects/Bridge-Design-Verification/index.html#limitations-and-future-work",
-    "title": "Design verification of bridges of Sudurpashchim Province, Nepal",
-    "section": "Limitations and Future Work",
-    "text": "Limitations and Future Work\nCurrent scope: - Monitoring is currently focused on a defined set of NOVA Group 4 brands - Classification thresholds are calibrated to HFSS and DSA criteria and may require adjustment for other regulatory contexts\nPlanned development: - Expand brand and platform coverage - Develop standardized reporting templates for regulatory submission - Validate risk scoring methodology through peer review - Explore applicability to tobacco and alcohol marketing compliance contexts\n\n\n  ← Back to Projects\n  \n       Live Platform"
+    "text": "Sudurpashchim Province\n  Hydrological Review\n  Geotechnical Analysis\n  Structural Verification\n  Completed\n\n```"
   },
   {
     "objectID": "publications.html#conference-abstracts-presentations",
